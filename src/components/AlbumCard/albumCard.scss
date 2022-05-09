@@ -1,0 +1,78 @@
+@import "./src/config/colors";
+
+.album {
+  width: 200px;
+  height: 270px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .25s background-color ease-in-out;
+  padding: 17px;
+  z-index: 0;
+
+    &__img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 3px;
+      object-fit: cover;
+      box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, 0.3);
+      transition: .2s box-shadow ease-in-out;
+    }
+
+    &__btn{
+      display: none;
+      position: relative;
+      z-index: 1;
+      bottom: 109px;
+      right: -114px;
+      background-color: $btn-green_hover;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      color: $white;
+      -webkit-transform: scale(1);
+      pointer-events: auto;
+      &:hover{
+        transform: scale(1.06);
+        color: $white;
+        background-color:$btn-green_hover;
+      }
+  }
+
+  &__name {
+    position: relative;
+    margin-top: 17px;
+    color: $white;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__artist {
+    position: relative;
+    color: $darkwhite;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    background-color: $black40;
+    .album__btn{
+      display: block;
+    }
+  }
+
+  &:hover .album__img {
+    box-shadow: 2px 2px 24px -3px rgba(0, 0, 0, 0.62);
+
+  }
+}

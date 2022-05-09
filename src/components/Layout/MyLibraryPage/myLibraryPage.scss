@@ -1,0 +1,64 @@
+@import "src/config/colors";
+
+.library {
+  padding: 0 16px;
+  &__sections {
+    display: flex;
+    column-gap: 5px;
+  }
+
+  &__info {
+    margin: 20px 0 40px 16px;
+  }
+
+  &__title {
+    color: $white;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  &__subtitle {
+    color: $grey;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 90%;
+    span {
+      color: $white;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  }
+
+  &__songs-wrap {
+    margin-top: 25px;
+  }
+
+  &__notsongs {
+    color: $white;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+
+    a {
+      color: $link-green_hover;
+    }
+  }
+
+  &__link {
+    color: $grey;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 25px;
+    border-radius: 4px;
+    transition: .15s color ease-in-out;
+
+    &_active {
+      background-color: rgba(255, 255, 255, .1);
+      color: $white;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

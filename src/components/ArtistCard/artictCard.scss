@@ -1,0 +1,62 @@
+@import "./src/config/colors";
+
+.artist {
+  min-width: 180px;
+  width: 200px;
+  max-width: 270px;
+  height: 270px;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  background-color: $black32;
+  transition: .25s background-color ease-in-out;
+  padding: 17px;
+  z-index: 0;
+
+  &__img {
+    width: 160px;
+    height: 160px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, 0.65);
+    transition: .2s box-shadow ease-in-out;
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    color: $white;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 4px;
+  }
+
+
+  &__role {
+    //color: $white;
+    color: rgb(167, 167, 167);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: normal;
+    background-color: $black50;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 18px;
+    margin-left: -5px;
+  }
+
+  &:hover {
+    background-color: $black40;
+  }
+
+  &:hover &__img {
+    box-shadow: 2px 3px 24px -3px rgba(0, 0, 0, 0.82);
+  }
+}

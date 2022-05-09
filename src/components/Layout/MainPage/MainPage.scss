@@ -1,0 +1,11 @@
+@import "./src/config/colors";
+
+.main-page-content {
+  padding: 24px 16px 0;
+  row-gap: 24px;
+  max-width: 1955px;
+  min-width: 527px;
+  @media (min-width: 1024px) {
+    padding: 0 32px;
+  }
+}

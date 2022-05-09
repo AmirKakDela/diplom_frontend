@@ -1,0 +1,16 @@
+.ant-alert {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  z-index: 1000;
+  border-radius: 7px;
+  background-color: #fcdbd7;
+
+  &-message {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

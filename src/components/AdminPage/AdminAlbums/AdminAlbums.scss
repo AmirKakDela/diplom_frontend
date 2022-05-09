@@ -1,0 +1,22 @@
+.admin{
+  padding: 0 16px;
+  &-album__wrap {
+    justify-content: space-between;
+
+    &.song-list {
+      height: 200px;
+      padding: 10px;
+      overflow: auto;
+    }
+  }
+}
+
+.group-form__button {
+  display: flex;
+  gap: 15px;
+}
+
+.songs-container{
+  width: 200px;
+  padding:20px;
+}

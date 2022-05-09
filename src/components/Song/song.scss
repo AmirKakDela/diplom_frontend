@@ -1,0 +1,110 @@
+@import "src/config/colors";
+
+.clip-loader{
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+.heart-outlined{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.heart-filled{
+  color: #1db954;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.song {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 320px;
+  border-radius: 4px;
+  transition: .2s all ease-in-out;
+  user-select: none;
+
+  &__main {
+    display: flex;
+    align-items: center;
+  }
+
+  &__other {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+  }
+
+  &__name {
+    //color: $white;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__artist {
+    font-size: 14px;
+    color: $grey;
+    font-weight: 600;
+    line-height: 115%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__number {
+    font-size: 16px;
+    color: $white;
+    font-weight: 400;
+  }
+
+  &__duration {
+    font-size: 14px;
+    color: $grey;
+    font-weight: 400;
+  }
+
+  &__play {
+    display: none;
+    font-size: 25px;
+    color: $white;
+    cursor: pointer;
+  }
+
+  &._played &__play, &:hover &__play {
+    display: block;
+  }
+
+  &._active {
+    background-color: rgba(255, 255, 255, .3);
+  }
+
+  &__first {
+    width: 10px;
+    margin-right: 10px;
+  }
+
+  &:not(._active):hover {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  &:hover {
+    .song__artist {
+      color: $white;
+    }
+
+    .song__number {
+      display: none;
+    }
+  }
+}

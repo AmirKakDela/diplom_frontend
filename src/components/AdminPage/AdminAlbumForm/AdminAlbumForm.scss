@@ -1,0 +1,21 @@
+@import 'src/config/colors';
+
+.admin-form {
+  width: 500px;
+  margin: 40px auto;
+
+  label {
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  &__title {
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+}

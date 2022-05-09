@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 700;
+    src: local('Circular'),
+    url(./assets/fonts/CircularStd-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 500;
+    src: local('Circular'),
+    url(./assets/fonts/CircularStd-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Circular';
+    font-weight: 400;
+    src: local('Circular'),
+    url(./assets/fonts/CircularStd-Book.ttf);
+}
+
+:root{
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div[id='root'] {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}

@@ -1,0 +1,123 @@
+@import "./src/config/colors";
+
+.ant-menu.ant-menu-dark {
+  background: $black0;
+}
+
+.sidebar {
+
+  height: 100%;
+  background: var(--sidebar-bg-color, #000000FF);
+
+  .home-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    max-height: 100px;
+    width: 241px;
+
+    img {
+      width: 180px;
+      height: 70px;
+      text-align: start;
+    }
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+    height: 100%;
+    border: none;
+    font-weight: bold;
+
+    #create-playlist, #favourite-tracks {
+      display: flex;
+      justify-items: start;
+      align-items: center;
+    }
+
+    #create-playlist {
+      margin-top: 25px;
+    }
+
+    .ant-menu-item {
+      display: flex;
+      justify-items: start;
+      align-items: center;
+      border-radius: 4px;
+
+      &-icon {
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .ant-menu-item-group-title {
+      display: none;
+    }
+
+    &__items {
+      width: 100%;
+      height: max-content;
+    }
+
+    &__playlists {
+      border-top: 1px solid var(--text-color);
+      height: fit-content;
+      margin-top: 10px;
+      max-height: 28vh;
+
+      width: 100%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 15px;
+        border-radius: 2px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--webkit-scrollbar-thumb-color);
+        transition: .3s all ease-in-out;
+
+        &:hover {
+          background-color: var(--webkit-scrollbar-thumb-hover-color);
+        }
+
+        &:active {
+          background-color: var(--webkit-scrollbar-thumb-active-color);
+        }
+
+        width: 15px;
+        border-radius: 2px;
+      }
+    }
+
+    &__playlist {
+      .ant-menu-title-content {
+        display: flex;
+        flex-direction: column;
+
+        .playlist {
+          &__name {
+            font-size: 14px;
+            line-height: 14px;
+          }
+
+          &__author {
+            font-size: 12px;
+            line-height: 12px;
+            color: var(--text-artist-color);
+          }
+        }
+      }
+    }
+  }
+
+
+}

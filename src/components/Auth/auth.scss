@@ -1,0 +1,178 @@
+@import "./src/config/colors";
+
+.form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px 30px 15px;
+
+  label {
+    font-weight: 700;
+    color: $darkgrey;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  &__logo {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    cursor: pointer;
+
+    &_wrap {
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__input {
+    padding: 9px 12px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    border: 1px solid $lightgrey;
+    display: block;
+
+    &:focus {
+      border: 1px solid $black;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: $lightgrey;
+      font-weight: 500;
+    }
+
+    &:hover {
+      border-color: #083813;
+    }
+
+    &_error {
+      border-color: $red_error;
+
+      &:hover {
+        border-color: $red_error;
+      }
+    }
+
+    &_color {
+      height: 50px !important;
+      padding: 5px 12px ;
+    }
+  }
+
+  &__error {
+    &_text {
+      margin-top: -17px;
+      margin-bottom: 10px;
+      color: $red_error;
+      font-weight: 500;
+      font-size: 13px;
+    }
+
+    &_block {
+      max-width: 570px;
+      margin: 25px auto;
+      padding: 12px;
+      background-color: $red_error;
+      color: $white;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+
+
+  &__button {
+    width: 100%;
+    background-color: $btn-green;
+    font-size: 14px;
+    border-radius: 500px;
+    border: none;
+    height: auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px;
+    margin-top: 10px;
+    color: $white;
+    transition: .2s all ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: $btn-green_hover;
+    }
+
+    &:disabled {
+      background-color: $link-green;
+      cursor: not-allowed;
+    }
+  }
+
+  &__button_login {
+    &:after {
+      content: "";
+      height: .5px;
+      width: 100%;
+      background-color: #8a8585;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-align: center;
+    margin-top: 30px;
+
+    &_signup {
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    text-align: center;
+    margin: 45px 0 10px 0;
+
+    a {
+      color: $link-green;
+      transition: .2s color ease-in-out;
+
+      &:hover {
+        color: $link-green_hover;
+      }
+    }
+  }
+
+  &__subtitle + &__button {
+    background-color: transparent;
+    color: $lightgrey;
+    border: 2px solid $lightgrey;
+
+    &:hover {
+      background-color: $lightgrey;
+      color: $white;
+      border-color: $lightgrey;
+    }
+
+    a:hover {
+      color: $white
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  .form__logo {
+    width: 200px;
+    padding: 15px;
+  }
+}
+

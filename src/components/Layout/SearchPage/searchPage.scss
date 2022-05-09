@@ -1,0 +1,64 @@
+@import "./src/config/colors";
+
+.collections__title {
+  margin-top: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.search {
+  height: 100vh;
+  padding: 20px 30px;
+
+  &__input {
+    max-width: 400px;
+    padding: 12px 15px;
+    margin: 0 auto;
+    border-radius: 500px;
+    border: none;
+
+    input {
+      color: $black26;
+      font-weight: 500;
+
+      &::placeholder {
+        color: $black26;
+      }
+    }
+  }
+
+  &__title {
+    color: white;
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  &__genres-row {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    overflow-x: scroll;
+    padding: 10px 0;
+  }
+
+  &__other {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+    padding: 10px 0;
+  }
+}
+
+
+// QUERY RESULT
+
+.search__songs {
+  display: flex;
+  flex-direction: column;
+}

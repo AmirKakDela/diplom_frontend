@@ -1,0 +1,43 @@
+@import "src/config/colors";
+
+.admin {
+  padding: 0 16px;
+  &__button {
+    width: 300px;
+    margin: 20px;
+  }
+  &__artist {
+    &__img {
+      width: 160px;
+      height: 160px;
+      display: block;
+      object-fit: cover;
+      box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, 0.65);
+      transition: .2s box-shadow ease-in-out;
+      margin-bottom: 16px;
+    }
+    &__wrap {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      border-bottom: .5px solid $lightgrey;
+      column-gap: 15px;
+    }
+    &__action {
+      width: auto;
+      margin-top: 0;
+      padding: 5px 15px;
+    }
+    &__buttons{
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+    }
+    &__name{
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "src/config/colors";
+
+.genre-page {
+  &__header {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .2s background-color ease-in-out;
+  }
+
+  &__name {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: $lightgrey;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../config/colors";
+
+.admin {
+  &_playlists {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+  }
+
+    &_playlist {
+      &__wrap {
+        width: 260px;
+        padding: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 15px;
+      }
+
+      &__delete {
+        margin-top: -52px;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+      }
+
+      &__button {
+        background: none;
+        border: none;
+        color: $white;
+
+        &:hover, &:active, &:focus {
+          background: $lightgrey;
+          border: none;
+          color: $white;
+        }
+      }
+    }
+
+}

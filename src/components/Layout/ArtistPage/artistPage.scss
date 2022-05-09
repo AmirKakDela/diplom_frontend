@@ -1,0 +1,86 @@
+@import "./src/config/colors";
+
+.info {
+  &__header {
+    //background: rgb(0, 0, 0);
+    //background: linear-gradient(284deg, rgba(0, 0, 0, 0.7749474789915967) 0%, rgba(34, 96, 15, 0.5816701680672269) 100%);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__main {
+    height: 500px;
+    padding: 30px;
+
+    .main {
+      &__title {
+        color: $white;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 20px 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+      &__slider {
+        display: flex;
+        column-gap: 30px;
+      }
+
+      &__songs {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__cover {
+    margin-right: 30px;
+
+    img {
+      width: 250px;
+      height: 250px;
+      display: block;
+      border-radius: 3px;
+      object-fit: cover;
+      box-shadow: 2px 2px 11px -3px rgba(0, 0, 0, 0.65);
+      transition: .2s box-shadow ease-in-out;
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.22);
+    color: $white;
+    padding: 10px;
+    border-radius: 10px;
+
+    .desc {
+      &__category {
+        color: $darkwhite;
+        text-transform: lowercase;
+      }
+
+      &__name {
+        //color: white;
+        font-size: 70px;
+        font-weight: 700;
+        line-height: 110%;
+        text-transform: uppercase;
+      }
+
+      &__author {
+        //color: white;
+      }
+
+      &__text {
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+  }
+}
