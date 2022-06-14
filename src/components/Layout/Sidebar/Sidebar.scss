@@ -10,17 +10,11 @@
   background: var(--sidebar-bg-color, #000000FF);
 
   .home-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 80px;
-    max-height: 100px;
-    width: 241px;
-
-    img {
-      width: 180px;
-      height: 70px;
-      text-align: start;
+    a {
+      margin-left: 15px;
+      color: $link-green_hover;
+      font-weight: 900;
+      font-size: 30px;
     }
   }
 

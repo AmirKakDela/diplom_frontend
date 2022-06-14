@@ -38,9 +38,9 @@ const Login: React.FC = () => {
     return (
         <>
             <div className="form__logo_wrap">
-                <img src={logo} alt="Logo" className="form__logo"/>
+                AMIR MUSIC
             </div>
-            <h5 className="form__title">Чтобы продолжить, войдите в Spotify.</h5>
+            <h5 className="form__title">Чтобы продолжить, войдите в Amir Music.</h5>
             {error && <div className="form__error_block">
                 <span>{error}</span>
             </div>}
@@ -81,7 +81,7 @@ const Login: React.FC = () => {
                         </button>
                         <h5 className="form__subtitle">Нет аккаунта?</h5>
                         <button className="form__button" type="button">
-                            <Link to={'/auth/signup'}>РЕГИСТРАЦИЯ В СПОТИФАЙ</Link>
+                            <Link to={'/auth/signup'}>РЕГИСТРАЦИЯ В Amir Music</Link>
                         </button>
                     </form>
                 )}

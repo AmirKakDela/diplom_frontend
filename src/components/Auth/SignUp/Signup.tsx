@@ -54,7 +54,7 @@ const Signup: React.FC<PropsType> = () => {
     return (
         <>
             <div className="form__logo_wrap">
-                <img src={logo} alt="Logo" className="form__logo"/>
+                AMIR MUSIC
             </div>
             <h1 className="form__title form__title_signup">Зарегистрируйтесь и слушайте бесплатно</h1>
             {error && <div className="form__error_block">

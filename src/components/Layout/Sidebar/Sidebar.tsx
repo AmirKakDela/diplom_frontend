@@ -65,7 +65,7 @@ const Sidebar: React.FC<PropsType> = (props) => {
         <div className="sidebar">
             <div className="home-logo">
                 <Link to="/">
-                    <img src={SpotifyLogo} alt="SpotifyLogo"/>
+                    AMIR MUSIC
                 </Link>
             </div>
             <Menu className="menu"
